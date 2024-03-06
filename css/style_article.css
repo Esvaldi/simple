@@ -235,7 +235,7 @@ article[id]:not([aria-labelledby^="all-story-"]) {
 	max-width: 600px;
 }
 @media screen and (min-width: 600px) {
-	article[id] h1 {
+	article[id] #story-title {
 		padding-bottom: 0.5rem;
 	}
 }
