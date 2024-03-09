@@ -354,7 +354,8 @@ article[id] [aria-labelledby="story-update"] article ul {
 article[id] [aria-label="Story Synopsis"] {
 	font-size: 0.85rem;
 }
-article[id] [aria-label="Story Synopsis"] > p:not(:last-child) {
+article[id] [aria-label="Story Synopsis"] > *:not(:last-child) {
+	display: block;
 	margin-bottom: 0.8rem;
 }
 article[id] [aria-labelledby="story-genres-tags"] > header {
