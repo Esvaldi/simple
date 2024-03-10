@@ -9,6 +9,9 @@
 	--color-rgb--passive: rgb(var(--color--passive));
 	--size-font--regular: 1rem;
 }
+html {
+  scroll-behavior: smooth;
+}
 article[id] *,
 article[id] *::before,
 article[id] *::after {
