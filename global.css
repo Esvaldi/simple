@@ -304,7 +304,7 @@ article#novel .s3:not(:last-child) {
   margin-bottom: 2.5rem;
 }
 
-article#novel .s3 > header {
+article#novel .s3 > header >h3{
   font-size: 1.4rem;
   margin-bottom: 1.75rem;
 }
@@ -318,7 +318,7 @@ article#novel .s3 > h3 .btn-1 {
     margin-bottom: 3rem;
   }
 
-  article#novel .s3 > header {
+  article#novel .s3 > header > h3{
     font-size: 1.6rem;
     margin-bottom: 2rem;
   }
