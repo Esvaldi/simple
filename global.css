@@ -80,7 +80,7 @@ article#novel figure#novel-cover > img {
 }
 
 /* FLEX - LIST */
-article#novel [class^="fx-l"] {
+[class*="fx-l"] {
   flex-wrap: wrap;
   list-style: none;
 
