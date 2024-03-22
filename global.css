@@ -350,7 +350,7 @@ article#novel .s4 > h4 .btn-1 {
     margin-bottom: 1.75rem;
   }
 
-  .s4 > h4 {
+ article#novel  .s4 > h4 {
     font-size: 1.2rem;
   }
 }
