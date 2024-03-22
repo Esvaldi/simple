@@ -1,0 +1,356 @@
+:root {
+  --color-white: whitesmoke;
+  --color-accent: cornflowerblue;
+  --color-grey: grey;
+
+  --color-gold: gold;
+  --color-bronze: ;
+  --color-silver: silver;
+}
+
+article#novel * {
+  box-sizing: border-box;
+
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+html {
+  color-scheme: dark light;
+  scroll-behavior: smooth;
+}
+
+article#novel a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+
+article#novel a:hover {
+  color: var(--color-white);
+}
+
+article#novel button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+article#novel button:not(:hover):not(.active) {
+  color: var(--color-accent);
+}
+
+article#novel button.btn-1 {
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+  border-radius: 5px;
+  height: fit-content;
+  padding: 4px;
+}
+
+article#novel button.btn-1:not(:hover):not(.active) {
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+}
+
+article#novel figure#novel-cover {
+  border-radius: 5px;
+}
+
+article#novel figure#novel-cover > img {
+  border-radius: 5px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* 
+
+# # #   DISPLAY
+
+*/
+/* FLEX */
+[class*="fx-"],
+.fx {
+  display: flex;
+}
+
+.fx.column {
+  flex-direction: column;
+}
+
+/* FLEX - LIST */
+[class^="fx-l"] {
+  flex-wrap: wrap;
+  list-style: none;
+
+  font-size: 0.8rem;
+  gap: 4px;
+}
+
+@media screen and (min-width: 280px) {
+  [class^="fx-l"] {
+    font-size: 0.9rem;
+  }
+}
+
+.fx-l4 {
+  column-gap: 0.5rem;
+  row-gap: 0.75rem;
+}
+
+article#novel .fx-l1 > li,
+article#novel .fx-l2 > li > a {
+  display: inline-block;
+
+  border: 2px solid;
+
+  border-radius: 5px;
+  padding: 4px;
+}
+
+article#novel .fx-l3 > li {
+  align-items: center;
+  display: flex;
+
+  border: 2px solid;
+
+  border-radius: 5px;
+  gap: 4px;
+  padding: 4px;
+}
+
+.fx-l4 > li {
+  position: relative;
+}
+
+article#novel .fx-l4 > li > a {
+  align-items: center;
+  display: flex;
+
+  padding: 4px;
+}
+
+.fx-l1 .context,
+.fx-l3 .context {
+  color: var(--color-grey);
+
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.fx-l4 > li .context {
+  position: absolute;
+
+  color: var(--color-grey);
+
+  bottom: -6px;
+  right: 0;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 620px) {
+  .fx-l1 .context,
+  .fx-l3 .context {
+    font-size: 0.85rem;
+  }
+
+  .fx-l4 > li .context {
+    bottom: -12px;
+    font-size: 0.75rem;
+  }
+}
+
+article#novel .fx-l4 > li [class^="material"] {
+  margin-right: 4px;
+}
+
+/* GRID */
+[class^="gd"],
+.gd {
+  display: grid;
+}
+
+.gd-double {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gd-triple {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* 
+
+# # #   DISPLAY MODIFIER
+
+*/
+.ai-center {
+  align-items: center;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+/* 
+
+# # #   UTILITIES
+
+*/
+.clr-both {
+  clear: both;
+}
+
+article#novel .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.passive {
+  color: var(--color-grey);
+}
+
+.gold {
+  color: var(--color-gold);
+}
+
+.bronze {
+  color: var(--color-bronze);
+}
+
+.silver {
+  color: var(--color-silver);
+}
+/* 
+
+# # #   PACKAGES
+
+*/
+[role="tablist"] > header {
+  position: relative;
+}
+
+article#novel [role="tablist"] > header button {
+  padding: 6px 2px;
+
+  text-align: center;
+}
+
+[role="tablist"] > header button:not(.active) {
+  border-bottom: 2px dashed;
+}
+
+.indicator {
+  position: absolute;
+
+  border-bottom: 2px solid;
+  transition: margin 0.25s ease-in-out;
+
+  top: 0;
+}
+
+.item:not(.show) {
+  display: none;
+}
+
+.fi {
+  display: inline-block;
+
+  max-width: 1.25rem;
+}
+
+.material-symbols-outlined {
+  display: inline-block;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+/* 
+
+# # #   ARTICLE
+
+*/
+article#novel {
+  position: relative;
+  font-family: "Lato";
+  font-size: 0.9rem;
+  margin: 0 auto;
+  max-width: 720px;
+  width: 98%;
+}
+
+@media screen and (min-width: 620px) {
+  article#novel {
+    font-size: 1rem;
+  }
+}
+
+/* 
+
+# # #   SECTIONS
+
+*/
+/* S3 */
+article#novel .s3:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+article#novel .s3 > header {
+  font-size: 1.4rem;
+  margin-bottom: 1.75rem;
+}
+
+article#novel .s3 > h3 .btn-1 {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 620px) {
+  article#novel .s3:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  article#novel .s3 > header {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* S4 */
+article#novel .s4:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+article#novel .s4 > h4 {
+  border-bottom: 2px dashed var(--color-grey);
+
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+
+.s4 > h4::before {
+  content: "・";
+}
+
+article#novel .s4 > h4 .btn-1 {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 620px) {
+  article#novel .s4:not(:last-child) {
+    margin-bottom: 1.75rem;
+  }
+
+  .s4 > h4 {
+    font-size: 1.2rem;
+  }
+}
