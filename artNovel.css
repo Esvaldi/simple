@@ -81,7 +81,7 @@ line-height:1.4}
 
 #novel #wildcard > ol > li {
   border: 2px solid;
-  line-height: 1.4;
+  line-height: 1.2;
   border-radius: 5px;
   padding: 2px 4px;
 }
@@ -101,10 +101,6 @@ line-height:1.4}
 #novel #novel-stats {
   margin-bottom: 1rem;
 }
-#novel #novel-stats *{
-  
-line-height: 1.4;
-}
 
 #novel #novel-stats > span:nth-child(2) {
   font-weight: 400;
@@ -116,6 +112,10 @@ line-height: 1.4;
   gap: 4px;
 }
 
+
+#novel #novel-stats ~ ul *{
+line-height:1.2;
+}
 #novel #novel-stats ~ ul li {
   text-align: center;
 
