@@ -80,7 +80,7 @@
 
 #novel #wildcard > ol > li {
   border: 2px solid;
-  line-height: 1;
+  line-height: .8;
   border-radius: 5px;
   padding: 2px 4px;
 }
