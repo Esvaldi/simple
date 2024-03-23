@@ -65,7 +65,7 @@ line-height:1.4}
   }
 
   #novel #wildcard > header > h3 {
-    border-bottom: 2px dashed;
+    border-bottom: 2px dashed var(--color-grey);
 
     font-size: 1rem;
   }
