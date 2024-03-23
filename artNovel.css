@@ -1,4 +1,4 @@
-is#novel header[aria-labelledby="novel-title"],
+#novel header[aria-labelledby="novel-title"],
 #novel #novel-description {
   margin-bottom: 1.5rem;
 }
