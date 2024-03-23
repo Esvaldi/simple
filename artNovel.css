@@ -25,9 +25,10 @@
 
 #novel #wildcard {
   margin-bottom: 1.25rem;
+}
 
-
-  line-height:1.4;}
+#novel #wildcard * {
+line-height:1.4}
 
 #novel #wildcard > figure {
   float: left;
