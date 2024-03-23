@@ -81,7 +81,7 @@ line-height:1.4}
 
 #novel #wildcard > ol > li {
   border: 2px solid;
-  line-height: .8;
+  line-height: 1.4;
   border-radius: 5px;
   padding: 2px 4px;
 }
@@ -100,6 +100,9 @@ line-height:1.4}
 
 #novel #novel-stats {
   margin-bottom: 1rem;
+}
+#novel #novel-stats *{
+  
 line-height: 1.4;
 }
 
